@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage ('gitcheckout') {
       steps {
-        git branch: 'main', url: 'https://github.com/GARAGANAGARAJU/spring-petclinic.git'
+        git 'https://github.com/GARAGANAGARAJU/jenkins_pipeline.git'
       }
     }
     stage ('build') {
